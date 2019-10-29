@@ -1,0 +1,53 @@
+
+
+.main-container {
+  background-color: #e3e3e3;
+
+  h2 {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 20px;
+    color: black;
+  }
+
+  .cards-container {
+    .cards{
+      padding: 10px;
+      
+      img {
+        width: 70vw;
+        display: flex;
+        padding: 10px 0;
+        margin: 0 auto;
+      }
+
+      h3 {
+        color: black;
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 22px;
+      }
+
+      p {
+        text-align: center;
+        font-size: 20px;
+      }
+    }
+  }
+
+  @media (min-width: 767px) {
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      grid-gap: 1rem;
+
+      .cards{
+        img {
+          width: -webkit-fill-available;
+        }
+      }
+    }
+  }
+}
