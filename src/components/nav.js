@@ -43,8 +43,8 @@ class Nav extends Component {
   handleMenu = (e) => {
     let tempArray = [];
     for (let i = 0; i < this.state.Menu.length; i++) {
-      if ( e.target.value == i ) {
-        if(this.state.Menu[i] == 1) {
+      if ( e.target.value === i ) {
+        if(this.state.Menu[i] === 1) {
           tempArray[i] = 0;
         } else {
           tempArray[i] = 1;
